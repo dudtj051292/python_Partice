@@ -155,3 +155,31 @@ print('add = ', Adder(10,20))
 
 print('add = ',(lambda x, y: x+y)(20,30))
 
+
+calc = lambda dan,su : dan*su
+print('price = ', calc(2500, 5))
+
+
+y = 0
+def local_func(x) :
+    global y
+    y += 50
+
+print('y :', y)
+local_func(30)
+print('y :', y)
+
+
+data = [1, 3, 5, 7, 9]
+tt = 0
+
+def calc_func( data ) :
+    global tt
+    tt += sum(data)
+    return tt
+
+print(tot)
+calc_func(data)
+print(tot)
+calc_func(data)
+print(tot)
